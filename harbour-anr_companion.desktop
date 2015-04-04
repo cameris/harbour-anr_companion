@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-anr_companion
+Exec=harbour-anr_companion
+Name=ANR Companion
+# translation example:
+# your app name in German locale (de)
+
