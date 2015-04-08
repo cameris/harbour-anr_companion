@@ -65,7 +65,7 @@ Item {
                     width: parent.width
                     wrapMode: Text.WordWrap
                     font.pixelSize: Theme.fontSizeLarge
-                    text: model.name
+                    text: (model.unique === 1 ? "♦" : "") +  model.name
                 }
 
                 Flow {
