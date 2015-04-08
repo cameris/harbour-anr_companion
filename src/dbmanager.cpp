@@ -105,7 +105,6 @@ DBManager::DBManager(QObject *parent) :
                     "CREATE TABLE cards ("
                     "   id INTEGER PRIMARY KEY,"
                     "   strId TEXT,"
-                    "   lastModified TEXT,"
                     "   name TEXT,"
                     "   ruletext TEXT,"
                     "   numberInSet INTEGER,"
