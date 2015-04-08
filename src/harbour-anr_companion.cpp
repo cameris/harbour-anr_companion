@@ -56,10 +56,10 @@ int main(int argc, char *argv[])
     qmlRegisterType<DeckCardProxyModel>("harbour.anr_companion", 1, 0, "DeckCardProxyModel");
 
     Settings settings;
-    if (settings.value("cards/images").toString() == "")
+    if (settings.value("cards/images", "").toString() == "")
     {
         settings.setValue("cards/images",
-                          QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + "/anr-images");
+                          QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/images");
     }
     view->rootContext()->setContextProperty("settings", &settings);
     view->rootContext()->setContextProperty("downloader", Downloader::instance());
