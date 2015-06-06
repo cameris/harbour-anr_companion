@@ -193,12 +193,16 @@ void DeckModel::removeDeck(const uint deckId)
     }
 }
 
-void DeckModel::exportOCTGN(const int row)
+void DeckModel::exportOCTGN(const uint deckId)
 {
-    if (row < 0 || row >= rowCount())
-        return;
-
-    _decks.at(row)->exportOCTGN();
+    for (int i = 0; i < rowCount(); ++i)
+    {
+        if (_decks.at(i)->deckId() == deckId)
+        {
+            _decks.at(i)->exportOCTGN();
+            return;
+        }
+    }
 }
 
 void DeckModel::updateDeckName()

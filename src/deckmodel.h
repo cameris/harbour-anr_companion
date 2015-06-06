@@ -51,7 +51,7 @@ public:
     Q_INVOKABLE void addDeck(const QString &name);
     Q_INVOKABLE void copyDeck(const uint deckId, const QString &name = "");
     Q_INVOKABLE void removeDeck(const uint deckId);
-    Q_INVOKABLE void exportOCTGN(const int row);
+    Q_INVOKABLE void exportOCTGN(const uint deckId);
 
 signals:
     void countChanged();

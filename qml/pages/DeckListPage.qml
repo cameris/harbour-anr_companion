@@ -72,7 +72,7 @@ Page {
                 MenuItem {
                     text: "Export as OCTGN deck"
                     onClicked: {
-                        deckSourceModel.exportOCTGN(index)
+                        deckSourceModel.exportOCTGN(model.id)
                         exportPopUpComponent.createObject(deckListPage, {
                                                      "deckName" : model.name
                                                  })
@@ -184,7 +184,7 @@ Page {
                 color: Theme.highlightColor
                 opacity: parent.opacity
                 font.pixelSize: Theme.fontSizeTiny
-                text: "Exported to Documents" + (deckName ? "/" + deckName + ".o8d" : "")
+                text: "Exported to Documents" + (deckName ? "/anr-decks/" + deckName + ".o8d" : "")
             }
 
             Timer {

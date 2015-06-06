@@ -251,7 +251,7 @@ void DeckCardModel::exportOCTGN()
     wr.writeEndElement(); // section
 
     wr.writeStartElement("section");
-    wr.writeAttribute("name", "R&amp;D / Stack");
+    wr.writeAttribute("name", "R&D / Stack");
     wr.writeAttribute("shared", "False");
 
     query = db->prepare(
