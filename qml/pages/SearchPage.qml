@@ -177,7 +177,6 @@ Page {
                                 font.pixelSize: Theme.fontSizeSmall
                                 color: gridDelegate.highlighted ? Theme.highlightColor : Theme.primaryColor
 
-                                textFormat: Text.RichText
                                 text: Theme.highlightText(name, cardModel.stringRegExp, Theme.highlightColor)
                             }
                         }
@@ -299,7 +298,6 @@ Page {
                         font.pixelSize: Theme.fontSizeMedium
                         color: listDelegate.highlighted ? Theme.highlightColor : Theme.primaryColor
 
-                        textFormat: Text.RichText
                         text: Theme.highlightText(name, cardModel.stringRegExp, Theme.highlightColor)
                     }
                     Flow {
